@@ -1,0 +1,35 @@
+Great question! Here’s how you should handle new categories and folders for images:
+How to Add a New Category (e.g., GAMING CHAIR)
+1. Create the Folder
+Create a new folder in your project:
+Apply to pc-builder-m...
+(It’s best to use all lowercase and avoid spaces if possible, e.g., gaming_chair)
+2. Upload Images to That Folder
+Place your images for gaming chairs in:
+Apply to pc-builder-m...
+or (recommended)
+Apply to pc-builder-m...
+3. Set the Database Path
+In your database, the Image field for a gaming chair component should be:
+Apply to pc-builder-m...
+or (recommended)
+Apply to pc-builder-m...
+Best Practices
+Avoid spaces in folder names. Use underscores (_) or hyphens (-) instead:
+gaming_chair or gaming-chair
+Keep everything lowercase for consistency and to avoid issues on Linux servers.
+So, for your example:
+If you create a folder named GAMING CHAIR, the path should be:
+Apply to pc-builder-m...
+But it’s better to use:
+Apply to pc-builder-m...
+And in the database, set:
+Apply to pc-builder-m...
+Summary Table
+| Folder Name on Disk | Database Path Example | Recommended? |
+|----------------------------|------------------------------------------------|--------------|
+| GAMING CHAIR | Images/components/GAMING CHAIR/image.png | ❌ |
+| gaming chair | Images/components/gaming chair/image.png | ❌ |
+| gaming_chair | Images/components/gaming_chair/image.png | ✅ |
+If you follow this, your uploader and modal will work perfectly for new categories!
+Let me know if you want to make the uploader auto-convert category names to lowercase and underscores for you!

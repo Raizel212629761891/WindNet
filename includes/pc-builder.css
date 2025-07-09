@@ -1,0 +1,75 @@
+/* Additional custom styles for PC Builder */
+
+/* Component card hover effect */
+#pcBuilderForm > div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Selection animation */
+.selection-details {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0284c7;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0369a1;
+}
+
+/* Custom select styling */
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    background-size: 1em auto;
+    padding-right: 2.5em;
+}
+
+/* Pulse animation for Save button */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(14, 165, 233, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
+    }
+}
+
+button:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .md\:w-3\/4, .md\:w-1\/4 {
+        width: 100%;
+    }
+    
+    .md\:flex-row {
+        flex-direction: column;
+    }
+}
