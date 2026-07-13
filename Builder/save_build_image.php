@@ -130,7 +130,8 @@ if (imagepng($newImage, $filename)) {
     echo json_encode(['success' => false, 'message' => 'Failed to save image']);
 }
 
-// Clean up
+
+// Cleans up
 imagedestroy($image);
 imagedestroy($newImage);
 ?>
